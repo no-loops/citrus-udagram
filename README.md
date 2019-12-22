@@ -19,3 +19,5 @@ e.g: http://citrusudagram.ca-central-1.elasticbeanstalk.com/filteredimage?image_
 2. cd into citrus-udagram-master
 3. npm install
 4. npm run dev
+
+Access at: http://localhost:8082/filteredimage?image_url=https://placekitten.com/408/287
