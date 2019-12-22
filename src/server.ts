@@ -32,7 +32,7 @@ import {filterImageFromURL, deleteLocalFiles} from './util/util';
         deleteLocalFiles([filteredImageFromURL])
       );
     } catch (error) {
-      res.sendStatus(422).send(`Unable to process image at url ${imageUrl}`);
+        res.sendStatus(422).send(`Unable to process image at url ${imageUrl}`);
     }
   });
 
