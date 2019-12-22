@@ -18,7 +18,7 @@ import {filterImageFromURL, deleteLocalFiles} from './util/util';
   app.get("/filteredimage", async (req, res) => {
     const imageUrl = req.query.image_url;
 
-    // Check if imageUrl is empty or invalid.
+    // Check if imageUrl is empty or invalid. Use package valid-url.
     if (!validURL.isUri(imageUrl)) {
       return res.status(400).send({
         message: "Image URL is invalid. Must be a publicly accessible url to an image"
